@@ -34,33 +34,6 @@ The schedule for the different curricula are listed here:
   </div>
 </div>
 
-{% elsif site.curriculum == "dc-image" %}
-<div class="row">
-  <div class="col-md-6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/image-processing/01-introduction/">Introduction</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/image-processing/02-image-basics/">Image Basics</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/image-processing/03-skimage-images/">Working with skimage</a></td></tr>
-      <tr><td>Afternoon</td> <td> <a href="https://datacarpentry.org/image-processing/04-drawing/">Drawing and Bitwise Operations</a></td></tr>
-      <tr><td> </td> <td> <a href="https://datacarpentry.org/image-processing/05-creating-histograms/">Creating Histograms</a></td></tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr><td>Morning</td><td><a href="https://datacarpentry.org/image-processing/06-blurring/">Blurring Images</a></td></tr>
-      <tr><td> </td> <td> <a href="https://datacarpentry.org/image-processing/07-thresholding/">Thresholding</a></td></tr>
-      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/image-processing/08-connected-components/">Connected Component Analysis</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/image-processing/09-challenges/">Capstone Challenge</a></td></tr>
-    </table>
-  </div>
-</div>
-
 {% elsif site.curriculum == "dc-ecology" %}
 <div class="row">
   <div class="col-md-6">
@@ -70,49 +43,58 @@ The schedule for the different curricula are listed here:
 	<td>Before starting</td>
 	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
       </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+      <tr><td> </td> <td><a href="https://datacarpentry.org/ecology-workshop/setup-r-workshop.html">Set up</a></td></tr>
+      <tr><td>9:00 am</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
+      <tr><td>10:45 am</td> <td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">Data Cleaning with OpenRefine</a></td></tr>
+      <tr> <td>12:00 pm</td> <td>END</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>
+      <tr> <td>9:00 am</td>
         <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
+          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R and starting with Data</a>
         </td>
       </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
+      <tr> <td>10:45 am</td><td><a href="https://datacarpentry.org/R-ecology-lesson/">Continued</a></td></tr>
       <tr>
-	<td>Evening</td>
-	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
-      </tr>
-      <tr>
-	<td> </td>
-	<td> END </td>
+	<td>12:00 pm</td> <td>END</td>
       </tr>
     </table>
   </div>
-</div>
-
+</div>	
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>9:00 am</td>
+        <td>
+          <a href="https://datacarpentry.org/R-ecology-lesson/">Manipulating Data</a>
+        </td>
+      </tr>
+      <tr> <td>10:45 am</td><td><a href="https://datacarpentry.org/R-ecology-lesson/">Continued</a></td></tr>
+      <tr>
+	<td>12:00 pm</td> <td>END</td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 4</h3>
+    <table class="table table-striped">
+      <tr> <td>9:00 am</td>
+        <td>
+          <a href="https://datacarpentry.org/R-ecology-lesson/">Vizualizing data with ggplot2</a>
+        </td>
+      </tr>
+      <tr> <td>10:45 am</td><td><a href="https://datacarpentry.org/R-ecology-lesson/">Continued</a></td></tr>
+      <tr>
+	<td>12:00 pm</td> <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
+      </tr>
+    </table>
+  </div>
+</div>	
+	
 {% elsif site.curriculum == "dc-genomics" %}
 
 <div class="row">
